@@ -1,0 +1,16 @@
+:root {
+    --primary-color: #191A19;
+    --secondary-color: #1E5128;
+    --tertiary-color: #4E9F3D;
+    --quaternary-color: #D8E9A8;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+}
