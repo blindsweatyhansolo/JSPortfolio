@@ -16,6 +16,14 @@ body {
     background-color: var(--primary-color);
 }
 
+main {
+    position: relative;
+    z-index: 1;
+    background: var(--primary-color);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+
 /* HEADER / NAV SECTION */
 header {
     padding: 10px 25px;
@@ -168,7 +176,10 @@ the typing animation into 20 steps */
     width: 20%;
     padding: 10px 20px;
     margin: auto;
+}
 
+.about-me {
+    border-bottom: 1px solid #1E5128;
 }
 
 /* ABOUT ME END */
@@ -186,11 +197,11 @@ footer {
     justify-content: space-between;
     flex-wrap: wrap;
     padding: 20px;
-    /*
+    
     position: -webkit-sticky;
     position: sticky;
     bottom: 0;
-    */
+    
     background-image: url("../images/hero_bg.jpg");
     background-size: cover;
     background-attachment: fixed;
@@ -224,7 +235,7 @@ footer a:visited {
 .section-title {
     font-size: 46px;
     color: var(--tertiary-color);
-    /* border-right: 3px solid var(--secondary-color); */
+    margin: 20px;
 }
 
 .flex-row {
