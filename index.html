@@ -3,18 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/styles.css">
+    <!-- <link rel="stylesheet" href="./assets/css/styles.css"> -->
     <title>Jack Semidey</title>
 </head>
 <body>
 
-<header>
-    
-</header>
-    
+    <header>
+        <h1>
+            <a href="./index.html">Jack Semidey</a>
+        </h1>
+        <nav>
+            <ul id="blur">
+                <li>
+                    <a href="#about-me">About Me</a>
+                </li>
+                <li>
+                    <a href="#portfolio">Portfolio</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
 
-<footer>
+    <section class="hero">
+        <div class="hero-container">
+            <div class="typewriter-text">
+                <h3>Hello World, my name is Jack!
+                    I'm an aspiring Web Developer.</h3>
+            </div>
+        </div>
+    </section>
+    
+    <div class="flex-row">
+        <h2 class="section-title">About Me</h2>
+        <section id="about-me" class="about-me">
+            <article class="intro">    
+                <p class="aboutme-poem">
+                Jack of all trades, master of a few,
+                always enjoy the challenge of learning something new.
+                </p>
+                <p>
+                Hi! I'm <span>Jack</span>, an aspiring Web Developer. Currently, I am a supervisor for Starbucks
+                on a diet of caffiene and always hungry for knowledge. A film geek, amateur wood-worker and photog,
+                D&D nerd, music lover and overall weird guy. <br />
+                I have made a big leap to change career paths and follow a newfound passion for all things Web Development.
+                Interested in giving me a shot? Reach out <a href="#contact">below</a>!
+                </p>
+            </article>
+            <article>
+                <img src="./assets/images/jack_profilepic.jpg" alt="Picture of Jack looking smug">
+            </article>
+        </section>
+    </div>
+        
+    <div class="flex-row">
+        <section id="portfolio" class="portfolio-cards">
+            <a href="https://blindsweatyhansolo.github.io/run-buddy/" target="_blank">
+            <img src="./assets/images/run-buddy.PNG" alt="Preview of Run Buddy's landing page" />
+            </a>
 
+            <img src="./assets/images/keyboard.jpg" alt="Picture of a keyboard" />
+
+            <img src="" alt="Picture of a calendar" />
+
+            <a href="https://blindsweatyhansolo.github.io/Fanpage---HTML/" target="blank">
+            <img src="./assets/images/modest_mouse.jpg" alt="Picture of the rock band Modest Mouse" />
+            </a>
+        </section>
+    </div>
+
+    <div class="flex-row">
+        <section id="contact" class="contact">
+            Contact Me
+        </section>
+    </div>
+
+<footer class="flex-row">
+    <h3>Made with HTML and CSS</h3>
+    <div>
+        <a href="./index.html">Back to Top</a>
+    </div>
 </footer>
 
 </body>
