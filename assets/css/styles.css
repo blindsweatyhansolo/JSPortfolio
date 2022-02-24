@@ -14,11 +14,9 @@
 body {
     font-family: Helvetica, Arial, sans-serif;
     background-color: var(--primary-color);
-
 }
 
 /* HEADER / NAV SECTION */
-
 header {
     padding: 10px 25px;
     display: flex;
@@ -50,10 +48,11 @@ header a:hover {
     text-shadow: 10px 10px 10px rgba(78, 159, 61, 0.5);
     color: var(--tertiary-color);
 }
-
+/*
 header a:visited {
     text-decoration: none;
 }
+*/
 
 header nav {
     margin: 7px 0;
@@ -73,10 +72,9 @@ header nav ul li a {
     font-size: 1.55vw;
     line-height: 1.5vw;
 }
-
 /* HEADER / NAV END */
-/* HERO SECTION */
 
+/* HERO SECTION */
 .hero {
     background-image: url("../images/hero_bg.jpg");
     background-size: cover;
@@ -121,5 +119,61 @@ the typing animation into 20 steps */
     from {border-color: transparent;}
     to {border-color: white;}
 }
-
 /* HERO END */
+
+/* ABOUT ME SECTION */
+/* ABOUT ME END */
+
+/* PORTFOLIO SECTION */
+/* PORTFOLIO END */
+
+/* CONTACT ME SECTION */
+/* CONTACT ME END */
+
+/* FOOTER SECTION */
+
+footer {
+    line-height: 1.5;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px;
+    /*
+    position: -webkit-sticky;
+    position: sticky;
+    bottom: 0;
+    */
+    background-image: url("../images/hero_bg.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 80%;
+}
+
+footer h3 {
+    color: var(--secondary-color);
+    font-size: 1.5vw;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-size: 1.5vw;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-shadow: 0 0 10px rgba(78, 159, 61, 0.5);
+}
+
+footer a:visited {
+    text-decoration: none;
+}
+
+/* FOOTER END */
+
+/* UTILITIES */
+
+.flex-row {
+    display: flex;
+}
+
+/* MEDIA QUERIES */
