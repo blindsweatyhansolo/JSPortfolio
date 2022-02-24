@@ -75,3 +75,51 @@ header nav ul li a {
 }
 
 /* HEADER / NAV END */
+/* HERO SECTION */
+
+.hero {
+    background-image: url("../images/hero_bg.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-attachment: fixed;
+    background-position: 80%;
+    height: 600px;
+}
+
+.hero-container {
+    display: inline-block;
+    margin: 0 auto;
+    padding-top: 200px;
+    padding-bottom: 300px;
+}
+
+.typewriter-text {
+    color: var(--quaternary-color);
+    font-family: American Typewriter, Courier, monospace;
+    overflow: hidden;
+    border-right: .15em solid white;
+    white-space: nowrap;
+    font-size: 1.5em;
+    width: 0;
+    align-content: center;
+    animation: 
+        typing 3s steps(50, end) forwards,
+        blink .8s infinite;
+}
+/* overflow:hidden and width:0 makes sure the content isn't revealed until typing
+effect starts / border-right used to create typewriter cursor / steps(20, end) breaks
+the typing animation into 20 steps */
+
+@keyframes typing {
+    from {width: 0;}
+    to {width: 100%;}
+}
+
+@keyframes blink {
+    from {border-color: transparent;}
+    to {border-color: white;}
+}
+
+/* HERO END */
