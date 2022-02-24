@@ -122,6 +122,55 @@ the typing animation into 20 steps */
 /* HERO END */
 
 /* ABOUT ME SECTION */
+
+.about-me {
+    margin: 20px;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    gap: 10px;
+    padding: 10px 10px;
+    flex-wrap: wrap;
+}
+
+.intro {
+    text-align: justify;
+    flex: 2;
+    padding: 10px 20px;
+    color: var(--quaternary-color);
+    line-height: 1.5;
+}
+
+.aboutme-poem {
+    font-style: italic;
+}
+
+.intro a {
+    text-decoration: none;
+    color: var(--quaternary-color);
+}
+
+.intro a:hover {
+    font-weight: bold;
+}
+
+.intro a:visited {
+    text-decoration: none;
+}
+
+.intro span {
+    font-weight: bold;
+}
+
+.about-me img {
+    border-radius: 50%;
+    flex: 1 1 10%;
+    width: 20%;
+    padding: 10px 20px;
+    margin: auto;
+
+}
+
 /* ABOUT ME END */
 
 /* PORTFOLIO SECTION */
@@ -171,6 +220,12 @@ footer a:visited {
 /* FOOTER END */
 
 /* UTILITIES */
+
+.section-title {
+    font-size: 46px;
+    color: var(--tertiary-color);
+    /* border-right: 3px solid var(--secondary-color); */
+}
 
 .flex-row {
     display: flex;
