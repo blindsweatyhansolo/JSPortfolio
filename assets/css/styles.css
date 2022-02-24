@@ -56,11 +56,6 @@ header a:hover {
     text-shadow: 10px 10px 10px rgba(78, 159, 61, 0.5);
     color: var(--tertiary-color);
 }
-/*
-header a:visited {
-    text-decoration: none;
-}
-*/
 
 header nav {
     margin: 7px 0;
@@ -185,6 +180,27 @@ the typing animation into 20 steps */
 /* ABOUT ME END */
 
 /* PORTFOLIO SECTION */
+
+.portfolio-cards {
+    align-content: center;
+    justify-content: center;
+    padding: 0 10% 0 10%;
+}
+
+.portfolio-cards h2 {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.portfolio-cards img {
+    width: 80%;
+    height: auto;
+}
+
+.portfolio-cards img:hover {
+    opacity: .5;
+}
+
 /* PORTFOLIO END */
 
 /* CONTACT ME SECTION */
@@ -197,11 +213,9 @@ footer {
     justify-content: space-between;
     flex-wrap: wrap;
     padding: 20px;
-    
     position: -webkit-sticky;
     position: sticky;
     bottom: 0;
-    
     background-image: url("../images/hero_bg.jpg");
     background-size: cover;
     background-attachment: fixed;
@@ -236,10 +250,16 @@ footer a:visited {
     font-size: 46px;
     color: var(--tertiary-color);
     margin: 20px;
+    padding: 10px 10px 30px 10px;
 }
 
 .flex-row {
     display: flex;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
 }
 
 /* MEDIA QUERIES */
