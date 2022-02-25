@@ -42,9 +42,11 @@
     
     <section id="about-me">
         <div class="flex-row about-me">
-
-            <h2 class="section-title">About Me</h2>
             
+            <aside class="primary-border">
+            <h2 class="section-title">About Me</h2>
+            </aside>
+
             <article class="intro">    
                 <p class="aboutme-poem">
                     Jack of all trades, master of a few,
@@ -68,70 +70,94 @@
     </section>
 
     
-    <section id="portfolio" class="portfolio-cards">
+    <section id="portfolio" class="portfolio">  <!--CONTAINER-->
       
         <h2 class="section-title">Portfolio</h2>
-      
-        <div class="flex-column">
+
+        <div class="projects">
             
+        
+            <div class="project project-primary">
             <a href="https://blindsweatyhansolo.github.io/run-buddy/" target="_blank">
             <img src="./assets/images/run-buddy.PNG" alt="Screenshot preview of Run Buddy's landing page" />
             </a>
+                <div class="project-info">
+                <h3>Run Buddy</h3>
+                </div>
+            </div>
             
-            <img src="./assets/images/keyboard.jpg" alt="Picture of a glowing keyboard" />
-            
-            <img src="./assets/images/planner.jpg" alt="Picture of a calendar on a desk with a folded pair of glasses on top" />
-            
-            <a href="https://blindsweatyhansolo.github.io/Fanpage---HTML/" target="blank">
-            <img src="./assets/images/modest_mouse.jpg" alt="Picture of the rock band Modest Mouse" />
-            </a>
+            <div class="project-secondary">
+                <div class="project">
+                <img src="./assets/images/keyboard.jpg" alt="Picture of a glowing keyboard" />
+                    <div class="project-info">
+                    <h3>Password Generator</h3>
+                    </div>
+                </div>
+
+                <div class="project">
+                <img src="./assets/images/planner.jpg" alt="Picture of a calendar on a desk with a folded pair of glasses on top" />
+                    <div class="project-info">
+                    <h3>Work Day Scheduler</h3>
+                    </div>
+                </div>
+
+                <div class="project">
+                <a href="https://blindsweatyhansolo.github.io/Fanpage---HTML/" target="blank">
+                <img src="./assets/images/modest_mouse.jpg" alt="Picture of the rock band Modest Mouse" />
+                </a>
+                    <div class="project-info">
+                    <h3>Modest Mouse: Fan Page</h3>
+                    </div>
+                </div>
+            </div>
         </div>
         
     </section>
     
-    <!--        
     <section id="contact" class="contact">
-        <h2 class="section-title">Contact Me</h2>
+        <h2 class="section-title">Contact</h2>
         
-        <div class="flex-column contact-form">
-            <p>Interested in getting a hold of me? Fill out the form below to send a message!</p>
-            
-            <label for="name">Your Name:</label>
-            <input type="text" name="name" id="name" class="form-input" placeholder="Your Name"/>
-            
-            <label for="email">Your E-mail:</label>
-            <input type="email" name="email" id="email" class="form-input" placeholder="Email Address"/>
-            
-            <label for="phone">Your Number:</label>
-            <input type="tel" name="phone" id="phone" class="form-input" placeholder="Phone Number" />
-            
-            <br />
-            
-            <label for="message">Your Message:</label>
-            <textarea name="message" id="message" cols="30" rows="5">Write me a message!</textarea>
-            <button type="submit">Reach out!</button>
+        <div class="contact-info">
+            <p>Interested in getting a hold of me? Fill out the form to send a message, or reach out to me on social media.</p>      
+            <div class="contact-socials">
+                <a href="https://github.com/blindsweatyhansolo" target="_blank">
+                <img src="./assets/images/github-logo.svg" alt="GitHub Logo" title="Link to Jack's GitHub profile page" />
+                </a>
+
+                <a href="https://www.linkedin.com/in/jack-semidey-774313222/" target="_blank">
+                <img src="./assets/images/linkedin-logo.svg" alt="LinkedIn Logo" title="Link to Jack's LinkedIn Profile" />
+                </a>
+
+                <a href="https://twitter.com/jackaaattack" target="blank">
+                <img src="./assets/images/twitter-logo.svg" alt="Twitter Logo" title="Link to Jack's Twitter Page" />
+                </a>
+
+                <a href="https://discordapp.com/users/blindsweatyhansolo#5937" target="_blank">
+                <img src="./assets/images/discord-logo.svg" alt="Discord Logo" title="Link to Jack's Discord Profile" />
+                </a>
+            </div>
         </div>
-
-        <div class="contact-socials">
-            <a href="https://github.com/blindsweatyhansolo" target="_blank">
-            <img src="./assets/images/github-logo.svg" alt="GitHub Logo" title="Link to Jack's GitHub profile page" />
-            </a>
-
-            <a href="https://www.linkedin.com/in/jack-semidey-774313222/" target="_blank">
-            <img src="./assets/images/linkedin-logo.svg" alt="LinkedIn Logo" title="Link to Jack's LinkedIn Profile" />
-            </a>
-
-            <a href="https://twitter.com/jackaaattack" target="blank">
-            <img src="./assets/images/twitter-logo.svg" alt="Twitter Logo" title="Link to Jack's Twitter Page" />
-            </a>
-
-            <a href="https://discordapp.com/users/blindsweatyhansolo#5937" target="_blank">
-            <img src="./assets/images/discord-logo.svg" alt="Discord Logo" title="Link to Jack's Discord Profile" />
-            </a>
+        
+        <div class="contact-form">
+            <form>
+                <label for="name">Your Name:</label>
+                <input type="text" name="name" id="name" class="form-input" placeholder="Your Name"/>
+            
+                <label for="email">Your E-mail:</label>
+                <input type="email" name="email" id="email" class="form-input" placeholder="Email Address"/>
+            
+                <label for="phone">Your Number:</label>
+                <input type="tel" name="phone" id="phone" class="form-input" placeholder="Phone Number" />
+            
+                <label for="message">Your Message:</label>
+                <textarea name="message" id="message" cols="30" rows="5" class="form-input">Write me a message!</textarea>
+                
+                <button type="submit">Reach out!</button>
+            </form>
         </div>
+        
 
     </section>
--->
 </main>
 
 <footer class="flex-row">
