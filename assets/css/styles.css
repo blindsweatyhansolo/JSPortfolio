@@ -142,6 +142,7 @@ the typing animation into 20 steps */
     padding: 10px 20px;
     color: var(--quaternary-color);
     line-height: 1.5;
+    border-left: 2px solid var(--tertiary-color);
 }
 
 .aboutme-poem {
