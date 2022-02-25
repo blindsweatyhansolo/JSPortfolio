@@ -33,7 +33,7 @@ header {
     position: -webkit-sticky;
     position: sticky;
     top: 0;
-    background-image: url("../images/hero_bg.jpg");
+    background-image: url("../images/hero_bg1.jpg");
     background-size: cover;
     background-attachment: fixed;
     background-position: 80%;
@@ -79,7 +79,7 @@ header nav ul li a {
 
 /* HERO SECTION */
 .hero {
-    background-image: url("../images/hero_bg.jpg");
+    background-image: url("../images/hero_bg1.jpg");
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -91,9 +91,7 @@ header nav ul li a {
 
 .hero-container {
     display: inline-block;
-    margin: 0 auto;
-    padding-top: 200px;
-    padding-bottom: 300px;
+    margin: auto;
 }
 
 .typewriter-text {
