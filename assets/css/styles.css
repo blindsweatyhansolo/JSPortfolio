@@ -83,54 +83,36 @@ header nav ul li a {
     background-size: cover;
     display: flex;
     justify-content: center;
+    align-content: center;
     flex-wrap: wrap;
     background-attachment: fixed;
     background-position: 80%;
     height: 600px;
 }
 
-.hero-container {
-    display: inline-block;
-    margin: auto;
-}
-
 .typewriter-text {
     color: var(--quaternary-color);
     font-family: American Typewriter, Courier, monospace;
-    overflow: hidden;
-    border-right: .15em solid white;
-    white-space: nowrap;
-    font-size: 1.5em;
-    width: 0;
+    white-space: wrap;
+    font-size: 5vw;
+    width: auto;
     align-content: center;
-    animation: 
-        typing 3s steps(50, end) forwards,
-        blink .8s infinite;
-}
-/* overflow:hidden and width:0 makes sure the content isn't revealed until typing
-effect starts / border-right used to create typewriter cursor / steps(20, end) breaks
-the typing animation into 20 steps */
-
-@keyframes typing {
-    from {width: 0;}
-    to {width: 100%;}
+    margin: 0 auto;
+    padding: 100px;
+    text-align: center;
 }
 
-@keyframes blink {
-    from {border-color: transparent;}
-    to {border-color: white;}
-}
 /* HERO END */
 
 /* ABOUT ME SECTION */
 
 .about-me {
     margin: 20px;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     align-content: center;
     gap: 10px;
-    padding: 10px 10px;
+    padding: 40px 10px;
     flex-wrap: wrap;
 }
 
@@ -141,6 +123,7 @@ the typing animation into 20 steps */
     color: var(--quaternary-color);
     line-height: 1.5;
     border-left: 2px solid var(--tertiary-color);
+    border-right: 2px solid var(--tertiary-color);
     min-width: max(50%, 200px);
 }
 
@@ -235,48 +218,50 @@ the typing animation into 20 steps */
 
 .contact {
     display: flex;
+    flex-direction: column;
     margin: auto;
+    justify-content: space-around;
+    padding: 40px;
 }
 
 .contact h2 {
     margin: auto 20px;
+    padding: 0 0 20px 0;
 }
 
-.contact-form {
-    border: none;
-    color: var(--quaternary-color);
-    background-color: rgba(30, 81, 41, 0.6);
-    padding: 20px;
-    width: 40%;
-    margin: 3.5%;
-    border-radius: 5%;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-
-.form-input {
-    display: block;
-    border: 1px solid var(--primary-color);
-    font-size: 12px;
-    margin-bottom: 15px;
-    width: 100%;
-    border-radius: 10%;
-    padding: 7px 15px;
-}
-
-.contact-info {
+.contact p {
     margin: auto;
     align-content: center;
     font-size: 16px;
     color: var(--quaternary-color);
+    border-top: 2px solid var(--tertiary-color);
+    padding-top: 30px;
+}
+
+.contact-info {
+    margin: auto 0;
+    padding: 40px;
+    text-align: center;
+}
+
+.contact-socials {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 .contact-socials img {
-    width: 10%;
-    justify-content: space-around;
-    display: inline;
+    width: 15%;
+    min-width: 75px;
 }
 
-.contact a {
+.contact-socials a {
+    display: flex;
+    width: 15%;
+    /* min-width: 100px; */
+    /* display: inline; */
+    align-content: center;
+    justify-content: center;
     text-decoration: none;
 }
 
