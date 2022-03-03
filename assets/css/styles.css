@@ -72,7 +72,7 @@ header nav ul {
 header nav ul li a {
     padding: 10px 15px;
     font-weight: bold;
-    font-size: 1.55vw;
+    font-size: calc(8px + 1.5vw);
     line-height: 1.5vw;
 }
 /* HEADER / NAV END */
@@ -94,7 +94,7 @@ header nav ul li a {
     color: var(--quaternary-color);
     font-family: American Typewriter, Courier, monospace;
     white-space: wrap;
-    font-size: 5vw;
+    font-size: calc(10px + 2vw);
     width: auto;
     align-content: center;
     margin: 0 auto;
@@ -114,6 +114,7 @@ header nav ul li a {
     gap: 10px;
     padding: 40px 10px;
     flex-wrap: wrap;
+    border-bottom: 1px dotted #1E5128;
 }
 
 .intro {
@@ -157,10 +158,6 @@ header nav ul li a {
     margin: auto;
 }
 
-.about-me {
-    border-bottom: 1px solid #1E5128;
-}
-
 /* ABOUT ME END */
 
 /* PORTFOLIO SECTION */
@@ -168,18 +165,34 @@ header nav ul li a {
 .portfolio {
     display: flex;
     justify-content: center;
+    border-bottom: 1px dotted #1E5128;
+    margin: 20px;
+    margin-top: 40px;
+    flex-direction: column;
 }
 
 .portfolio h2 {
-    margin: auto 20px;
+    margin: auto;
+    margin-bottom: 20px;
+    text-align: center;
+    border-bottom: 2px solid var(--tertiary-color);
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
 .projects {
     width: 80%;
     margin: 0 auto;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    flex-wrap: nowrap;
     justify-content: center;
+    align-items: center;
+}
+
+.projects img:hover {
+    opacity: .5;
+    border: none;
 }
 
 .project {
@@ -191,6 +204,7 @@ header nav ul li a {
 
 .project img {
     width: 100%;
+    border: 3px solid var(--secondary-color);
 }
 
 .project-info {
@@ -210,6 +224,7 @@ header nav ul li a {
 
 .project-secondary {
     order: 2;
+    width: 80%;
 }
 
 /* PORTFOLIO END */
@@ -222,11 +237,11 @@ header nav ul li a {
     margin: auto;
     justify-content: space-around;
     padding: 40px;
+    padding-top: 0;
 }
 
 .contact h2 {
     margin: auto 20px;
-    padding: 0 0 20px 0;
 }
 
 .contact p {
@@ -281,17 +296,15 @@ footer {
     background-size: cover;
     background-attachment: fixed;
     background-position: 80%;
+    color: var(--secondary-color);
+    font-size: calc(7px + 1.5vw);
 }
 
-footer h3 {
-    color: var(--secondary-color);
-    font-size: 1.5vw;
-}
+/* footer h3 {
+} */
 
 footer a {
     text-decoration: none;
-    color: var(--secondary-color);
-    font-size: 1.5vw;
     font-weight: bold;
 }
 
@@ -301,6 +314,7 @@ footer a:hover {
 
 footer a:visited {
     text-decoration: none;
+    color: var(--secondary-color);
 }
 
 /* FOOTER END */
@@ -311,16 +325,18 @@ footer a:visited {
     font-size: 46px;
     color: var(--tertiary-color);
     margin: 20px;
-    padding: 10px 10px 30px 10px;
+    padding: 10px 10px 20px 10px;
 }
 
 .flex-row {
     display: flex;
 }
 
-.flex-column {
-    display: flex;
-    flex-direction: column;
-}
-
 /* MEDIA QUERIES */
+
+@media screen and (max-width: 575px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+}
